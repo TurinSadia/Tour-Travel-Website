@@ -47,7 +47,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <p className="regular-14 bg-secondary text-white py-2 px-8 rounded-b-xl justify-center">
+        <p className="regular-14 bg-secondary text-white py-2 px-8 rounded-b-xl justify-center text-center">
           {" "}
           © 2024 All Rights Reserved
         </p>
