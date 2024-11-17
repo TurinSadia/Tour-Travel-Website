@@ -35,31 +35,49 @@ const Feature = () => {
     arrows: true,
     infinite: true,
     autoplay: true,
-    slidesToShow: 1,
+    slidesToShow: 4,
     slidesToScroll: 1,
     nextArrow: <NextArrow />,
     prevArrow: <PrevArrow />,
-    reponsive: [
+    responsive: [
       {
-        breakpoint: 1400,
+        breakpoint: 1441, // Extra-large desktop
         settings: {
           slidesToShow: 4,
         },
       },
       {
-        breakpoint: 1280,
+        breakpoint: 1281, // Large desktop
         settings: {
           slidesToShow: 3,
         },
       },
       {
-        breakpoint: 768,
+        breakpoint: 1025, // Small laptop or desktop
+        settings: {
+          slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 769, // Large tablet
         settings: {
           slidesToShow: 2,
         },
       },
       {
-        breakpoint: 640,
+        breakpoint: 601, // Small tablet
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 481, // Small mobile
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+      {
+        breakpoint: 320, // Extra small mobile
         settings: {
           slidesToShow: 1,
         },
@@ -122,7 +140,9 @@ const FeatureItem = ({ title, URL, des }: FeatureItem) => {
         <h4 className="capitalize regular-22 absolute top-6 left-4 text-white">
           {title}
         </h4>
-        <p className="regular-18 absolute bottom-6 right-0 bg-tertiary text-white px-4 py-4 rounded-l-full group-hover:bg-secondary group-hover:!pr-8 transition-all duration-300">{des}</p>
+        <p className="regular-18 absolute bottom-6 right-0 bg-tertiary text-white px-4 py-4 rounded-l-full group-hover:bg-secondary group-hover:!pr-8 transition-all duration-300">
+          {des}
+        </p>
       </Link>
     </div>
   );
