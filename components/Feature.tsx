@@ -12,7 +12,7 @@ const Feature = () => {
     return (
       <div
         onClick={onClick}
-        className="bg-white text-2xl p-3 inline-block rounded-lg shadow-md absolute top-1/2 right-0 lg:-top-40 lg:right-4 z-10 ring-1 ring-slate-900/5 hover:bg=primary"
+        className="bg-white text-2xl p-3 inline-block rounded-lg shadow-md absolute top-1/2 right-0 lg:-top-40 lg:right-2 z-10 ring-1 ring-slate-900/5 hover:bg-primary"
       >
         <RiArrowRightSLine />
       </div>
@@ -24,7 +24,7 @@ const Feature = () => {
     return (
       <div
         onClick={onClick}
-        className="bg-white text-2xl p-3 inline-block rounded-lg shadow-md absolute top-1/2 lg:-top-40 lg:right-20 z-10 ring-1 ring-slate-900/5 hover:bg=primary"
+        className="bg-white text-2xl p-3 inline-block rounded-lg shadow-md absolute top-1/2 lg:-top-40 lg:right-20 z-10 ring-1 ring-slate-900/5 hover:bg-primary"
       >
         <RiArrowLeftSLine />
       </div>
