@@ -35,7 +35,7 @@ const Feature = () => {
     arrows: true,
     infinite: true,
     autoplay: true,
-    slidesToShow: 2,
+    slidesToShow: 1,
     slidesToScroll: 1,
     nextArrow: <NextArrow />,
     prevArrow: <PrevArrow />,
